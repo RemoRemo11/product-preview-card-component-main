@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.container .image img {
+    max-width: 100%;
+
+}
+.container .content {
+    padding: 30px;
+
+}
+
+.container .content > span {
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 10px;
+
+}
+
+.container .content h2 {
+    font-family: Fraunces;
+    font-size: 35px;
+    line-height: 1;
+    padding-top: 20px;
+}
+
+.container .content p {
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    font-size: 14.8px;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+
+.container .content .price {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.container .content .price span{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 30px;
+    padding-right: 20px;
+
+}
+
+.container .content .price del {
+    font-size: 12px;
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+}
+
+.container .content button {
+    color: white;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-family: Montserrat;
+    margin-top: 20px;
+}
+
+.container .content button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+
+}
+
+.container .content button img {
+    width: 12px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
