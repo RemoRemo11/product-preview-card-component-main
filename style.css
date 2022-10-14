@@ -8,23 +8,40 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
 }
 
 .container {
+    margin: 15px;
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(2, 300px);
     border-radius: 6px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
-.container .image img {
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+.container picture img {
     max-width: 100%;
 
 }
 .container .content {
-    padding: 30px;
+    padding: 20px;
+}
 
+@media (min-width: 768px) {
+    .container .content {
+        padding: 30px;
+    }
 }
 
 .container .content > span {
@@ -38,22 +55,32 @@ body {
 
 .container .content h2 {
     font-family: Fraunces;
-    font-size: 35px;
+    font-size: 32px;
     line-height: 1;
-    padding-top: 20px;
+    padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .container .content h2 {
+        font-size: 36;
+        padding-top: 20px;
+        
+    }
 }
 
 .container .content p {
     font-family: Montserrat;
     color: hsl(228, 12%, 48%);
-    font-size: 14.8px;
+    font-size: 14.5px;
     line-height: 1.5;
     padding-top: 20px;
 }
 
 
+
+
 .container .content .price {
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
 
@@ -63,7 +90,7 @@ body {
 .container .content .price span{
     color: hsl(158, 36%, 37%);
     font-family: Fraunces;
-    font-size: 30px;
+    font-size: 35px;
     padding-right: 20px;
 
 }
@@ -78,7 +105,7 @@ body {
     color: white;
     width: 100%;
     background-color: hsl(158, 36%, 37%);
-    padding: 10px 0;
+    padding: 15px 0;
     border: none;
     border-radius: 6px;
     font-family: Montserrat;
@@ -92,8 +119,8 @@ body {
 }
 
 .container .content button img {
-    width: 12px;
-    margin-right: 5px;
+    width: 14px;
+    margin-right: 6px;
 }
 
 
